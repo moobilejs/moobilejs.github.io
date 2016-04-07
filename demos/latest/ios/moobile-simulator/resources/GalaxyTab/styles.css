@@ -1,0 +1,101 @@
+/* Device
+-----------------------------------------------------------------------------*/
+
+.simulator {
+  background: url(galaxyTab.png) no-repeat;
+  background-size: 1030px 1509px;
+  height: 1509px;
+  padding-top: 111px;
+  padding-bottom: 120px;
+  padding-left: 114px;
+  padding-right: 114px;
+  width: 1030px;
+}
+
+.simulator.landscape{
+  top: -200px;
+}
+
+.simulator .simulator-glare {
+  background: url(galaxy-glare.png) no-repeat top right;
+    background-size: 1030px 1509px;
+  height: 1509px;
+  width: 1030px;
+}
+
+.simulator .simulator-facade {
+  height: 1280px;
+  width: 800px;
+}
+
+.simulator.portrait .simulator-screen {
+  height: 1280px;
+  width: 800px;
+}
+
+.simulator.landscape .simulator-screen {
+  height: 800px;
+  margin-top: 240px;
+  margin-left: -240px;
+  width: 1280px;
+}
+
+.simulator.portrait .simulator-screen iframe {
+  height: 1234px;
+  width: 800px;
+}
+
+.simulator.landscape .simulator-screen iframe {
+  height: 754px;
+  width: 1280px;
+}
+
+/* Portrait With Browser Bar */
+
+.simulator.portrait.with-browser-bar .simulator-screen iframe {  height: 1130px; }
+
+/* Landscape With Browser Bar */
+
+.simulator.landscape.with-browser-bar .simulator-screen iframe { height: 650px; }
+
+/*Browser Bar
+-----------------------------------------------------------------------------*/
+
+.simulator .simulator-browser-bar {
+  display: none;
+  width: 100%;
+}
+
+.simulator.portrait .simulator-browser-bar {
+  background: url(browser-bar-portrait.png);
+    background-size: 800px 104px;
+    height: 104px;
+}
+
+.simulator.landscape .simulator-browser-bar {
+  background: url(browser-bar-landscape.png);
+    background-size: 1280px 104px;
+    height: 104px;
+}
+
+.simulator.with-browser-bar .simulator-browser-bar {
+  display: block;
+}
+
+.simulator .simulator-browser-address{
+  position: absolute;
+  top: 70px;
+  left: 220px;
+  border: 0;
+  font: normal 16px Helvetica; 
+  color: #F4F4F4;
+  background: transparent;
+  width: 410px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.simulator.landscape .simulator-browser-address{
+  width: 900px;
+}
